@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Ticket Booking Form</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+      background-image: url('train.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .booking-form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+    }
+    .booking-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .input-group-text {
+      background-color: #2980b9;
+      color: white;
+    }
+    .btn-custom {
+      background-color: #2ecc71;
+      color: white;
+    }
+    .btn-custom:hover {
+      background-color: #27ae60;
+    }
+</style>
+</head>
+<body>
+ 
+  <div class="booking-form">
+<h2>Train Ticket Booking</h2>
+<!-- Passenger Name -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">Passenger Name</span>
+</div>
+<input type="text" class="form-control" id="passengerName" placeholder="Enter your name" required>
+</div>
+ 
+    <!-- Email -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">Email</span>
+</div>
+<input type="email" class="form-control" id="passengerEmail" placeholder="Enter your email" required>
+</div>
+ 
+    <!-- Departure -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">Departure</span>
+</div>
+<input type="text" class="form-control" id="departure" placeholder="Enter departure location" required>
+</div>
+ 
+    <!-- Destination -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">Destination</span>
+</div>
+<input type="text" class="form-control" id="destination" placeholder="Enter destination location" required>
+</div>
+ 
+    <!-- Travel Date -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">Travel Date</span>
+</div>
+<input type="date" class="form-control" id="travelDate" required>
+</div>
+ 
+    <!-- Class -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<label class="input-group-text" for="travelClass">Class</label>
+</div>
+<select class="custom-select" id="travelClass" required>
+<option value="">Select class</option>
+<option value="First Class">First Class</option>
+<option value="Second Class">Second Class</option>
+<option value="Sleeper Class">Sleeper Class</option>
+</select>
+</div>
+ 
+    <!-- Number of Tickets -->
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<label class="input-group-text" for="numTickets">Tickets</label>
+</div>
+<input type="number" class="form-control" id="numTickets" placeholder="Enter number of tickets" required>
+</div>
+ 
+    <!-- Submit Button -->
+<div class="d-flex justify-content-center">
+<button class="btn btn-custom btn-lg">Book Ticket</button>
+</div>
+</div>
+ 
+  <!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

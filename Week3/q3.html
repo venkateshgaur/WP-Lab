@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee CRUD Operations</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-section {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom-section > div {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bottom-section > div:first-child {
+            margin-left: 0;
+        }
+
+        .bottom-section > div:last-child {
+            margin-right: 0;
+        }
+
+        .input-group-text {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-primary, .btn-success, .btn-info, .btn-danger {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .badge {
+            margin-top: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the World of Webpages</h1>
+        <div class="top-section">
+            <h2>Top Section</h2>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username">
+                <div class="input-group-append">
+                    <span class="input-group-text">@example.com</span>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Primary Button</button>
+            <span class="badge badge-secondary">New</span>
+        </div>
+
+        <div class="bottom-section">
+            <div>
+                <h2>Section 1</h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">#</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="ID">
+                </div>
+                <button type="button" class="btn btn-success">Success Button</button>
+                <span class="badge badge-success">Success</span>
+            </div>
+            <div>
+                <h2>Section 2</h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Amount">
+                </div>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> Left
+                    </label>
+                    <label class="btn btn-info">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Middle
+                    </label>
+                    <label class="btn btn-info">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Right
+                    </label>
+                </div>
+                <span class="badge badge-info">Info</span>
+            </div>
+            <div>
+                <h2>Section 3</h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">%</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Discount">
+                </div>
+                <button type="button" class="btn btn-danger">Danger Button</button>
+                <span class="badge badge-danger">Danger</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
