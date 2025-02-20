@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Text on Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            box-sizing: border-box;
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="curry.jpeg" alt=" Image" class="image">
+        <div class="text">Basketball GOAT</div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.text').animate({ left: '0%' }, 2000);
+        });
+    </script>
+</body>
+</html>
+
